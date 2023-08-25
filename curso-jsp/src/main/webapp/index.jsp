@@ -9,11 +9,27 @@
 <body>
 	<h1>Bem-vindo ao curso de JSP</h1>
 	
-	<form action="receber-nome.jsp">
-		<input name="nome">
-		<input name="idade">
-		<input type="submit" value="Enviar">
+	<form action="<%= request.getContextPath() %>/ServletLogin" method="post">
+	
+	<table>
+		<tr>
+			<td><label>Login</label></td>
+			<td><input name="login" type="text"></td>
+		</tr>
+		
+		<tr>
+			<td><label>Senha</label></td>
+			<td><input name="senha" type="password"></td>
+		</tr>
+		
+		<tr>
+		<td></td>
+			<td><input type="submit" value="Enviar"></td>
+		</tr>
+	</table>
+		
 	</form>
 	
+	<h4>${msg}</h4>
 </body>
 </html>
