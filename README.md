@@ -34,3 +34,16 @@ Nesta mesma tela, na aba "Runtimes" Selecione o Apache Tomcat 10.1
 Em Targeted Runtimes selecione o Apache Tomcat 10.1:  
 
 ![image](https://github.com/Prosantosgui/curso-jsp/assets/66363478/4548c030-f681-47b2-a709-6f2f0d13e218)
+
+Após isso, vá até a view "Servers" -> Clique com o botão direito no servidor Apache Tomcat 10.1 -> <b>Add and Remove...</b> -> Selecione o projeto e clique em <b>Add</b> -> <b>Finish</b>
+![image](https://github.com/Prosantosgui/curso-jsp/assets/66363478/424f7347-061a-458c-ba64-58488eaf1ce5)
+
+<h3>Iniciando o projeto</h3>
+
+Para iniciar o projeto: Clique com o botão direito sobre o servidor Apache Tomcat 10.1 -> Start
+
+Após isso, acesse http://localhost:8080/curso-jsp/ 
+
+<i>Como desenvolvedor recomendo o uso da view <b>Package Explorer</b> para visualização de pastas dentro do projeto</i>
+
+E pronto, o projeto já está configurado e rodando! 😀
