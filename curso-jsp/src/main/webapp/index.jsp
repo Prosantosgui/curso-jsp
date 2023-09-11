@@ -22,7 +22,7 @@
 		left: 35%;
 		 
 		}
-		.alert alert-warning{
+		h5{
 		position: absolute;
 		top: 60%;
 		left: 36%;
@@ -60,10 +60,8 @@
 	</form>
 	
 	
-	<div class="alert alert-warning" role="alert">
-	  ${msg}
-	</div>
-	
+	 <h5>${msg}</h5>
+	  
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 	
 	<script type="text/javascript">
