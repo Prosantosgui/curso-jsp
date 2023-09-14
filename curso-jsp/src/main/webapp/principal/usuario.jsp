@@ -39,31 +39,32 @@
 
 													<div class="card-block">
 														<h4 class="sub-title">Cadastro usuário</h4>
-														<form class="form-material">
+														<form class="form-material" action="<%=request.getContextPath() %>/ServletUsuarioController" method="post">
 															<div class="form-group form-default">
-																<input type="text" name="footer-email"
-																	class="form-control" required="" readonly="readonly">
+																<input type="text" name="id" id="id"
+																	class="form-control" required="required" readonly="readonly">
 																<span class="form-bar"></span> <label
 																	class="float-label">ID:</label>
 															</div>
 															<div class="form-group form-default">
-																<input type="text" name="footer-email"
-																	class="form-control" required=""> <span
+																<input type="email" name="email" id="email"
+																	class="form-control" required="required" autocomplete="off"> <span
 																	class="form-bar"></span> <label class="float-label">Email:</label>
 															</div>
 															<div class="form-group form-default">
-																<input type="password" name="footer-email"
-																	class="form-control" required=""> <span
+																<input type="password" name="senha" id="senha"
+																	class="form-control" required="required" autocomplete="off"> <span
 																	class="form-bar"></span> <label class="float-label">Senha:</label>
 															</div>
 															<div class="form-group form-default">
-																<input type="text" name="footer-email"
-																	class="form-control" required=""> <span
+																<input type="text" name="login" id="login"
+																	class="form-control" required="required" autocomplete="off"> <span
 																	class="form-bar"></span> <label class="float-label">Nome:</label>
 															</div>
 
-															<button class="btn btn-primary waves-effect waves-light">Primary
-																Button</button>
+															<button class="btn btn-primary waves-effect waves-light">Novo</button>
+															<button class="btn btn-success waves-effect waves-light">Salvar</button>
+															<button class="btn btn-info waves-effect waves-light">Excluir</button>
 														</form>
 													</div>
 												</div>
