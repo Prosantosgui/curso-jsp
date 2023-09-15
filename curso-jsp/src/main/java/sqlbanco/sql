@@ -22,4 +22,21 @@ ALTER TABLE IF EXISTS public.model_login
     OWNER to postgres;
     
     
-INSERT INTO public.model_login(login, senha) VALUES ('admin', 'admin');    
+INSERT INTO public.model_login(login, senha) VALUES ('admin', 'admin');
+
+
+//Alterações e inclusão de login, senha, email e setando como not null
+
+alter table model_login add id serial primary key;
+
+alter table model_login add email character varying(300);
+
+update model_login set login = '';
+update model_login set senha = '';
+update model_login set nome = '';
+update model_login set email = '';
+
+alter table model_login alter column login set not null;
+alter table model_login alter column senha set not null;
+alter table model_login alter column nome set not null;
+alter table model_login alter column email set not null;    
