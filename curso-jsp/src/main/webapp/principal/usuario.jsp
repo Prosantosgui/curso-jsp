@@ -40,7 +40,7 @@
 													<div class="card-block">
 														<h4 class="sub-title">Cadastro usuário</h4>
 														<form class="form-material"
-															action="<%=request.getContextPath()%>/ServletUsuarioController"
+															action="<%= request.getContextPath() %>/ServletUsuarioController"
 															method="post">
 															<div class="form-group form-default">
 																<input type="text" name="id" id="id"
@@ -86,8 +86,8 @@
 												</div>
 											</div>
 										</div>
-
-
+									<span>${msg}</span>
+									
 									</div>
 									<!-- Page-body end -->
 								</div>
