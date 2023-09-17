@@ -4,15 +4,24 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
 <title>Tela de erro</title>
 </head>
+
 <body>
-	<h1>Entre em contato com a equipe de suporte do sistema!</h1>
-	<h3>${msg}</h3>
-	<textarea rows="20" cols="50">${msg}</textarea>
+
+	<div class="d-flex flex-column mb-5 mt-5">
+		
+			<h1 class="align-self-center">Entre em contato com a equipe de suporte do sistema!</h1>
+			
+			<div class="alert alert-danger w-75 d-flex align-self-center mt-5" role="alert">
+			  ${msg}
+			</div>
+		
+	</div>
 	
-	<%
-		out.print(request.getAttribute("msg"));
-	%>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
